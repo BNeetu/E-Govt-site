@@ -1,0 +1,1185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS FOR HEADER DIV */
+.header{
+    background-color: rgb(17, 5, 74);
+    height: auto;
+    display: flex;
+    padding: 7px;
+    text-align: center;
+    padding-top: 8px;
+        
+
+}
+
+.carousel-para{
+    margin-left: -33px;
+}
+
+.header-link-items a{
+    color:rgb(230, 230, 232);
+    text-decoration: none;
+    margin-right: 32px;
+
+
+}
+.header-link-items a:hover {
+    color: orangered;
+}
+
+.header-link-items{
+ display: flex;
+ justify-content: center;
+ /* gap: 5px; */
+
+}
+
+.header-para{
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    margin-left: 16vh;
+
+
+    
+}
+.header-para p{
+    margin-right: 36px;
+    justify-content: center;
+
+
+}
+
+@media (min-width: 375px) and (max-width: 496px) {
+    .header-para p {
+        display: block;
+        margin-bottom: 10px;
+        text-align: center; /* Add this line to center align text */
+    }
+    .header-link-items {
+        margin-top: 10px;
+    }
+    .header-para{
+        display: flex;
+        align-items: center;
+        color: white;
+        justify-content: center;
+        margin-left: 6vh;
+    
+    
+        
+    }
+}
+
+/* Default styles */
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: stretch;
+        height: auto; 
+    }
+
+    .header-para {
+        margin-bottom: 5px;  
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        height: auto; 
+    }
+
+    .header-para {
+        margin-bottom: 5px;
+    }
+
+    .carousel-caption {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+/* Media query for screen size up to 470px */
+
+@media (max-width: 490px) {
+    .header-para {
+        flex-direction: column;
+        text-align: center; /* Add this line to center align text */
+    }
+
+    .header-para p {
+        margin-bottom: 10px;
+    }
+
+    .header-link-items {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 499px) {
+    .imgs-div {
+        width: calc(50% - 10px); /* Adjust the width for two items in a row */
+    }
+}
+
+
+
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-- END OF HEADER ---XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX STARTING CSS OF  NAVBAR  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.nav-link{
+    color: rgb(6, 51, 146);
+}
+
+.nav-link:hover{
+    color: orangered;
+
+}
+
+.language-nav{
+    border: 2px solid rgb(201, 201, 202);
+    border-radius: 15rem;
+    height: 35px;
+    width: 100px;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 148px;
+
+}
+.language-nav:hover{
+    border: 2px solid orangered;
+}
+
+
+.box-search{
+    height: 30px;
+    color: black;
+    margin-left: 22px;
+   
+
+}
+.box-search:hover input{
+    width: 110px;
+    border: 1px solid rgb(124, 124, 124);
+    border-radius: 15px;
+    padding: 3px;
+}
+.search-icon{
+    color: black;
+    height: 44px;
+}
+.box-search input{
+    width: 0;
+    outline: none;
+    border: 1px black;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+}
+
+.phone{
+    color: rgb(255, 106, 0);
+    width: 23px;
+    height: 20px;
+    margin-right: 7px;
+}
+
+.clock{
+    color: rgb(255, 106, 0);  
+    width: 25px;
+    height: 20px;
+}
+
+
+.navbar{
+    height: auto;
+    padding-top: 8px ;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    
+}
+.button-nav{
+    color: rgb(10, 120, 222);
+    border: 2px solid rgb(10, 120, 222);;
+    padding: 1vh;
+    margin-left: 10vh;
+    width: 141px;
+
+
+}
+
+.button-nav:hover{
+    color: orangered;
+    border: 2px solid orangered;
+}
+
+.navbar-items-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.navbar-items-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+/* @media (max-width: 768px) {
+    .navbar-items-1,
+    .navbar-items-2 {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff; 
+        padding: 10px; 
+        border: 1px solid #ddd; 
+        z-index: 999;
+        display: none; 
+    }
+
+    .button-nav{
+        color: rgb(10, 120, 222);
+        border: 2px solid rgb(10, 120, 222);;
+        padding: 1vh;
+        margin-left: 10vh;
+        width: 140px;
+        position: absolute;
+        left: 15%;
+        top: 20%;
+    }
+    .language-nav{
+        border: 2px solid rgb(201, 201, 202);
+        border-radius: 15rem;
+        height: 35px;
+        width: 100px;
+        margin: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 18%;
+        top: 20%;
+        margin-left: 177px;
+    
+    }
+    .search-icon{
+        color: black;
+        height: 44px;
+        position: absolute;
+        top: 55%;
+    }
+
+    .navbar-div .navbar-toggler {
+        display: block; 
+    }
+
+    .navbar-collapse.show .navbar-items-1,
+    .navbar-collapse.show .navbar-items-2 {
+        display: block; 
+    }
+} */
+/* @media (max-width: 992px) {
+    .navbar-items-1,
+    .navbar-items-2 {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 10px; 
+        border: 1px solid #ddd; 
+        z-index: 999; 
+        display: none; 
+    }
+
+   
+} */
+
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    /* .navbar img {
+        max-width: 150px;
+    }
+    .navbar-nav .nav-link {
+        font-size: 16px;
+    } */
+    .bi {
+        font-size: 16px;
+    }
+    .dash-items .dash-h4 {
+        font-size: 16px; 
+    }
+   
+}
+
+.carousel-img-2{
+    width: 100%!important;
+    height: 633px;
+    
+} 
+
+
+/* @media (max-width: 768px) {
+    .navbar-items-1,
+    .navbar-items-2 {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff; 
+        padding: 10px; 
+        border: 1px solid #ddd; 
+        z-index: 999;
+        display: none; 
+    }
+
+  
+    .language-nav{
+        border: 2px solid rgb(201, 201, 202);
+        border-radius: 15rem;
+        height: 35px;
+        width: 100px;
+        margin: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 18%;
+        top: 20%;
+        margin-left: 177px;
+    
+    }
+    
+}
+@media (max-width: 992px) {
+    .navbar-items-1,
+    .navbar-items-2 {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 10px; 
+        border: 1px solid #ddd; 
+        z-index: 999; 
+        display: none; 
+    }
+
+    .navbar-div .navbar-toggler {
+        display: block; 
+    }
+
+    .navbar-collapse.show .navbar-items-1,
+    .navbar-collapse.show .navbar-items-2 {
+        display: block; 
+    }
+} */
+@media screen and (max-width: 576px) {
+    .navbar img {
+        max-width: 100px; 
+    }
+    .navbar-nav .nav-link {
+        font-size: 14px; 
+    }
+    .bi {
+        font-size: 14px; 
+    }
+     .dash-h4 {
+        font-size: 12px;
+        margin-bottom: 20px;
+        margin-top: 1px;
+
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .navbar img {
+        max-width: 150px;
+    }
+    .navbar-nav .nav-link {
+        font-size: 16px;
+    }
+    .bi {
+        font-size: 16px;
+    }
+    .dash-items .dash-h4 {
+        font-size: 16px; 
+    }
+}
+@media (max-width: 576px) {
+    .carousel-caption h1{
+        font-size: 21px;
+        position: absolute;
+        top:  -194%;
+    }
+    .carousel-caption p {
+        font-size: 15px;
+        display: none; 
+    }
+    .dash-button{
+        width: 9rem;
+        height: 2rem;
+        color: white;
+        background-color: orangered;
+        position: absolute;
+        margin-top: 3vh;
+        border: none;
+        top: -45%;
+        /* margin-left: -40px; */
+    }
+    
+}
+
+.dash-button:hover{
+    color: orangered;
+    background-color: white;
+    font-weight: 600;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+    .carousel-caption h1,
+    .carousel-caption p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .button-nav{
+        color: rgb(10, 120, 222);
+        border: 2px solid rgb(10, 120, 222);;
+        padding: 1vh;
+        margin-left: 10vh;
+        width: 140px;
+        position: absolute;
+        left: -17%;
+        top: 84%;
+    }
+    .language-nav{
+        border: 2px solid rgb(201, 201, 202);
+        border-radius: 15rem;
+        height: 35px;
+        width: 100px;
+        margin: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 39%;
+        top: 20%;
+        margin-left: 168px;
+    
+    }
+    .search-icon{
+        color: black;
+        height: 44px;
+        position: absolute;
+        top: 23%;
+        display: none;
+    }
+    .carousel-img-2{
+        width: 100%!important;
+        height: 633px;
+        
+    } 
+
+   
+}
+
+
+.card {
+    border: none; /* Remove border */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add dark shadow */
+}
+
+
+@media screen and (max-width: 576px) {
+ 
+    .bi {
+        font-size: 14px; 
+    }
+     .dash-h4 {
+        font-size: 12px;
+        margin-bottom: 20px;
+        margin-top: 1px;
+
+    }
+    .dash-main-div p {
+        color: white;
+        bottom: 16%;
+        left: 24%;
+
+    }
+ 
+}
+@media (max-width: 499px) {
+    .logo-row .col-lg-2 {
+        flex: 0 0 50%; /* Two items per row */
+        max-width: 50%;
+        margin-bottom: 83px;
+
+    }
+    .logo{
+        padding: 50px;
+    }
+    .meet-div{
+    position: relative;
+    margin-bottom: 20rem;
+}
+.carousel-img-2{
+    width: 100%!important;
+    height: 202px;
+    
+} 
+
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    /* .navbar img {
+        max-width: 150px;
+    }
+    .navbar-nav .nav-link {
+        font-size: 16px;
+    } */
+    .bi {
+        font-size: 16px;
+    }
+    .dash-items .dash-h4 {
+        font-size: 16px; 
+    }
+    
+}
+
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX END OF NAVBR CODE XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+
+
+
+
+
+/* <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-- STARTING OF CAROUSEL CODE--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX --> */
+/* <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX --> */
+
+.carousel-inner{
+    position: relative;
+}
+.carousel-caption{
+    bottom: rem;
+    
+    top: 10rem;
+}
+.carousel-caption, carousel-head, p{
+    font-size: 0.9rem;
+}
+
+
+@media (max-width: 576px) {
+    .carousel-caption h1{
+        font-size: 21px;
+        position: absolute;
+        top:  -194%;
+    }
+    .carousel-caption p {
+        font-size: 15px;
+        display: none; 
+    }
+    .dash-button{
+        width: 9rem;
+        height: 2rem;
+        color: white;
+        background-color: orangered;
+        position: absolute;
+        margin-top: 3vh;
+        border: none;
+        top: -45%;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h1{
+        font-size: 21px;
+        position: absolute;
+        top:  -194%;
+    }
+    .carousel-caption p {
+        font-size: 15px;
+        display: none; 
+    }
+    .dash-button{
+        width: 9rem;
+        height: 2rem;
+        color: white;
+        background-color: orangered;
+        position: absolute;
+        margin-top: 3vh;
+        border: none;
+        top: -45%;
+    }
+   
+}
+
+
+
+.dash-heade{
+    position: relative;
+}
+.heading{
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    
+}
+.heading h1 {
+    font-size: 4rem;
+}
+.heading p {
+    margin-top: 1rem;
+}
+.dash-button{
+    width: 9rem;
+    height: 2.5rem;
+    color: white;
+    background-color: orangered;
+    position: absolute;
+    margin-top: 3vh;
+    border: none;
+    margin-left: -34px;
+
+}
+.dash-main-div{
+    /* height: 35vh; */
+    width: 100%;
+    position: relative;
+    background-color: orangered;
+}
+.dash-items{
+    background-color: rgb(255, 255, 255);
+    /* height: 32vh; */
+    width: 100%;
+    position:absolute;
+    bottom: 45%;
+    left: 6%;
+}
+.dash-main-div p {
+    color: white;
+    bottom: 16%;
+    left: 24%;
+    padding-top: 150px;
+}
+.dash-items-button {
+    top: 68%;
+    left: 68%;
+    padding: 0.7vh;
+    background-color:rgb(214, 62, 7) ;
+    color: white;
+    border: none;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.dash-items-button:hover{
+    color: orangered;
+    background-color: white;
+    font-weight: 600;
+}
+
+
+.explore-div{
+    background-color: aqua;
+    height: 70vh;
+}
+.carousel-head{
+    color: rgb(252, 252, 252);
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 3rem;
+    top: 50%;
+    margin-left: -33px;
+
+}
+
+
+.carousel-caption, p {
+    margin-left: 7px;
+
+}
+
+.banklogo{
+    color: orangered;
+    width: 5rem;
+    height: 5rem;
+}
+
+.dash-items{
+    justify-content: center;    
+    align-items:center;
+}
+.dash-h4{
+    text-align: center;
+   margin-top: 1rem;
+    font-size: 1.1rem;
+    color: rgb(16, 16, 113);
+}
+.logo {
+    /* margin-top: 2rem; */
+    align-items:center ;
+    padding: 2rem;
+}
+.logo a {
+    text-decoration: none;
+}
+
+@media (max-width: 499px) {
+    .dash-main-div p {
+        padding-top: 17px;
+    }
+}
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX END CODE OF carousel XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX EXPLORE SERVICES DIV XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+
+.Explore-button{
+    width: 8rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+}
+.Explore-button:hover{
+    color: white;
+    background-color: orangered;
+}
+
+
+.Explore-heading{
+    margin-top: 1.5rem;
+}
+
+.exp-botton{
+    width: 20rem;
+    height: 5rem;
+    color: rgb(5, 5, 120);
+    position: relative;
+    top: -11%;
+    left: 11%;
+    background-color: white;
+    border: 0;
+    border-radius: 0;
+    font-size: 1.6rem;
+}
+.exp-botton:hover{
+    color: rgb(255, 255, 255);
+    background-color: navy !important;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Meet Ideological CODE XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+.quote-heading{
+    margin-left: 2rem;
+    margin-top: 3rem;
+}
+.quote-h5{
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+.meet-div{
+    position: relative;
+    margin-bottom: 20rem;
+}
+.meet-img-div{
+    position: relative;
+}
+.meet-img1{
+    position: absolute;
+    z-index: 3;
+    left: 10%;
+    
+}.meet-img2{
+    position: absolute;
+    bottom: -2%;
+    left: 35%;
+    z-index: 2;
+}.meet-img3{
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    z-index: 1;
+    
+}
+.meet-h2{
+    margin-bottom: 2rem;
+}
+.meet-p{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+.video{
+    height: 4rem;
+    width: 4rem;
+    color: orangered;
+    position: absolute;
+    bottom: -18%;
+    left: 1%;
+}
+.video-para{
+    position: absolute;
+    left: 7%;
+    bottom: -11%;
+    height: 1.5px;
+
+
+} 
+.meet-line::before{
+    content: '';
+    width: 0.2rem;
+    height: 11rem;
+    left: 1%;
+    top: 65%;
+    display: block;
+    background-color: orangered;
+    position: absolute;
+
+
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX END Meet Ideological  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX DATA SECTION XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.logo-number-div{
+    width: 100%;
+    height: 24rem;
+}
+.img-background{
+    background-color:rgb(5, 5, 66);
+    background-image: url("bg01.png");
+    height: auto;
+    background-size: cover;
+}
+.direction{
+    color: orangered;
+    height: 5rem;
+    width: 5rem;
+    
+}
+.para-logo{
+    color: aliceblue;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+.para-head{
+    color: wheat;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.data-logos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ 
+}
+.data-logos-itmes{
+    margin-top: 4rem;
+    
+}
+
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX END OF DATA SECTION XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX MEET COUNCIL XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+
+.card-header-para{
+    color: blue;
+    margin-top: 0.5rem;
+}
+.cont-para{
+    padding-left: 1rem;
+}
+.card{
+    border-radius: 0;
+}
+.imgs-div{
+
+    opacity: 0.5;
+}
+.imgs-div:hover{
+    opacity: 1;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX FOOTER XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.subscribe-button{
+    background-color: orangered;
+    color: white;
+    border-radius: 0;
+}
+.foot-div{
+    background-color: rgb(4, 4, 86);
+    color: white;
+    padding: 1rem;
+}
+.foot-int{
+    width: 10rem;
+    border-radius: 0;
+}
+.foot-head{
+    background-color: rgb(4, 4, 86);
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub-button{
+    color: white;
+    background-color: orangered;
+    border-radius: 0;
+}
+.sub-input{
+    border-radius: 0;
+}
+.useful-links{
+    margin-top: 0.5rem;
+}
+#foot-icons{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    height: 1rem;
+    width: 1rem;
+}
+.foot-items{
+    display: flex;
+    margin-right: 1rem;
+}
+   .list-unstyled.d-flex.flex-wrap.mb-0.justify-content-center.justify-content-lg-start.foot-items li {
+        margin-right: 2rem; 
+        color: white;
+    }
+    .list-unstyled.d-flex.flex-wrap.mb-0.justify-content-center.justify-content-lg-start.foot-items a {
+        text-decoration: none; 
+    }
+.foot-div{
+    background-color: rgb(3, 3, 80) ;
+
+}    
+.list-unstyled.d-flex.flex-wrap.mb-0.justify-content-center.justify-content-lg-start.foot-items li:hover {
+    margin-right: 2rem; 
+    color: orangered;
+}
+aside, div {
+    margin: 0;
+    padding: 0;
+}
+.lower-foot{
+    color: rgb(255, 255, 255);
+    background-color: rgb(13, 2, 94);
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX END OF FOOTER  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+@media (max-width: 768px) {
+    .para-logo {
+        font-size: 14px;
+    }
+    .para-head {
+        font-size: 16px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .meet-h2 {
+        font-size: 24px;
+    }
+    .meet-p {
+        font-size: 16px;
+    }
+    .quote-heading {
+        font-size: 20px;
+    }
+    .quote-h5 {
+        font-size: 16px;
+    }
+    .video-para {
+        font-size: 14px;
+    }
+}
+@media (max-width: 767.98px) {
+    .exploreServicesBlock .container .row.justify-content-center .col-12 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .exploreServicesBlock .container .row.justify-content-center .col-12:not(:last-child) {
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 767.98px) {
+    .meet-img1 {
+        margin-top: 84px ;
+        position: absolute;
+        z-index: 3;
+        left: 11%;
+        top: 37%;
+        width: 175px; 
+        height: auto; 
+    }
+
+    .meet-img2 {
+        position: absolute;
+        margin-top: 189px;
+        top: 66%; 
+        left: 12%;
+        z-index: 2;
+        width: 105px; 
+        height: auto; 
+    }
+
+    .meet-img3 {
+        position: absolute;
+        margin-top: 161px;
+        top: 50%;
+        left: 28%;
+        z-index: 1;
+        width: 152px; 
+        height: auto; 
+    }
+    .video{
+        height: 3rem;
+        width: 3rem;
+        color: orangered;
+        position: absolute;
+        bottom: -9%;
+        left: 1%;
+    }
+    .video-para{
+        position: absolute;
+        left: 19%;
+        bottom: -5%;
+        height: 1.5px;
+    
+    
+    } 
+}
+
+@media (max-width: 767px) {
+    .dash-items {
+      bottom: auto;
+      left: auto;
+      width: 100%;
+      padding: 0;
+      position: relative;
+      height: auto;
+    }
+  .dash-main-div{
+
+    height: auto;
+    width: 100%;
+    position: relative;
+    background-color: orangered;
+  }
+  .banklogo{
+    color: orangered;
+    width: 3rem;
+    height: 3rem;
+}
+
+    .logo {
+      margin-bottom: 65px ;
+      height: 1rem;
+      width: 1rem;
+      
+    }
+    .logo-row {
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+    }
+    .dash-items-button {
+        top: 68%;
+        left: 68%;
+        padding: 0.7vh;
+        background-color:rgb(214, 62, 7) ;
+        color: white;
+        border: none;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-md-6 {
+        width: 100%;
+    }
+
+   
+} 
+
+
+
+
+
+@media (max-width:768){
+    .data-logos{
+        flex-wrap: wrap;
+
+    }
+    .direction{
+        height: 2rem;
+        width: 2rem;
+    }
+}
